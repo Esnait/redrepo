@@ -1,0 +1,229 @@
+{
+	"info": {
+                "projectName"   : "static code analysis",
+                "fileType"      : "configuration",
+                "description"   : "Checks happen based on the configurations....."
+    },
+    
+    "settings": {
+                "logLevel"      : "OFF",
+                "gropBy"        : "file",
+                "targetLanguage": "java"
+    },
+
+    "ruleConfiguration": {
+
+            "category": {
+
+                    "Code coverage": {
+                            "ruleset": [{
+                                
+                                "rule"   : "Objects should be cleaned properly",
+                                "options": { 
+                                        "priority"  : "critical",
+                                        "analyze"   : "no"  
+                                    }
+                                },
+
+                                {
+                                
+                                "rule"   : "Check for hard coded Wait statements",
+                                "options": { 
+                                        "priority"  : "critical",
+                                        "analyze"   : "no"  
+                                    }
+                                },
+
+                                {
+                                
+                                "rule"   : "Check for any unnessary object creation",
+                                "options": { 
+                                        "priority"  : "critical",
+                                        "analyze"   : "no"  
+                                    }
+                                },
+
+                                {
+                                
+                                "rule"   : "Local variable should be declared with endline comment",
+                                "options": { 
+                                        "priority"  : "critical",
+                                        "analyze"   : "no"  
+                                    }
+                                },
+
+                                {
+                                
+                                "rule"   : "Medhod name should be mixed-case(camelCase) starts with a small character",
+                                "options": { 
+                                        "priority"  : "critical",
+                                        "analyze"   : "yes"  
+                                    }
+                                }]
+                        },
+
+					"General": {
+							"ruleset": [{
+									
+								"rule"   : "Public/Private keywords should be used only within a class",
+								"options": { 
+										"priority"  : "critical",
+										"analyze"   : "no"  
+									}
+								},
+
+								{
+								
+								"rule"   : "Code Should be Properly indented",
+								"options": { 
+										"priority"  : "critical",
+										"analyze"   : "no"  
+									}
+								},
+
+								{
+								
+								"rule"   : "Global variables should not be modified inside any function",
+								"options": { 
+										"priority"  : "critical",
+										"analyze"   : "no"  
+									}
+								},
+
+								{
+						
+								"rule"   : "Check for any un-used package/library",
+								"options": { 
+										"priority"  : "critical",
+										"analyze"   : "no"  
+									}
+								},
+
+								{
+								
+								"rule"   : "Check for any hard-coded data given to testcases",
+								"options": { 
+										"priority"  : "critical",
+										"analyze"   : "no"  
+									}
+								},
+								
+								{
+								
+								"rule"   : "Check for code duplication in testcases",
+								"options": { 
+										"priority"  : "critical",
+										"analyze"   : "no"  
+									}
+								},
+								
+								{
+								
+								"rule"   : "Check for proper handling of Null Pointer Exceptions",
+								"options": { 
+										"priority"  : "critical",
+										"analyze"   : "no"  
+									}
+								},
+
+								{
+						
+								"rule"   : "Check for any validations using Assert/Verify",
+								"options": { 
+										"priority"  : "critical",
+										"analyze"   : "no"  
+										}
+								}]
+						},
+
+					"Selenium": {
+							"ruleset": [{
+								
+								"rule"   : "Test classes name should follow by 'test' word",
+								"options": { 
+										"priority"  : "critical",
+										"analyze"   : "no"  
+										}
+								},
+
+								{
+								
+								"rule"   : "All Test classes should be inside 'test' folder",
+								"options": { 
+										"priority"  : "critical",
+										"analyze"   : "no"  
+										}
+								},
+
+								{
+								
+								"rule"   : "Check for all setup/connections should be inside @Before method",
+								"options": { 
+										"priority"  : "critical",
+										"analyze"   : "no"  
+										}
+								},
+
+								{
+								
+								"rule"   : "Check for the drivers destroyed in @After method",
+								"options": { 
+										"priority"  : "critical",
+										"analyze"   : "no"  
+										}
+								},
+
+								{
+								
+								"rule"   : "Avoid inter-dependency between different tests in a test suite",
+								"options": { 
+										"priority"  : "critical",
+										"analyze"   : "no"  
+										}
+								}]
+						},
+  
+                    "Code maintainability": {
+                            "ruleset": [{
+                                
+                                "rule"   : "Maximum lines in a scripts",
+                                "options": { 
+                                        "maxLines"  : 5000,
+                                        "priority"  : "warning",
+                                        "analyze"   : "yes"  
+                                         }
+                                },
+                            
+                                {
+                                "rule"   : "Maximum characters in a single Line",
+                                "options": { 
+                                        "maxChar"   : 80,
+                                        "priority"  : "important",
+                                        "analyze"   : "yes"  
+                                    }
+                                },
+
+                                {
+                        
+                                "rule"   : "Maximum characters in a variable name",
+                                "options": { 
+                                        "maxChar"   : 32,
+                                        "priority"  : "critical",
+                                        "analyze"   : "yes"  
+                                    }
+                                },
+							
+								{
+                        
+								"rule"   : "Maximum number of variables in a class",
+								"options": { 
+										"maxChar"   : 5,
+										"priority"  : "critical",
+										"analyze"   : "no"  
+									}
+								}]
+                        }
+                }
+    
+        }
+}
